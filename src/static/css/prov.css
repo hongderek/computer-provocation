@@ -1,0 +1,90 @@
+#provocation-slider {
+  font-size: 2em;
+  margin-top: 1em;
+  top: 1em;
+}
+
+#fixation-container {
+  margin: auto;
+  width: 5em; 
+  height: 400px;
+  display: flex;
+}
+
+#fixation-dot {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin: auto;
+}
+
+#stimulus-container {
+  width: 100%;
+  color: white;
+}
+
+.provocation-image, .neutral-image {
+  height: 400px;
+}
+
+.photodiode-box {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.photodiode-spot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  outline: 3px solid rgb(80,80,80);
+}
+.photodiode-spot.lit {
+  background-color: white;
+}
+.photodiode-spot.unlit {
+  background-color: black;
+}
+
+.jspsych-content-wrapper {
+  display: flex;
+  /*justify-content: center;
+  align-items: center;*/
+  margin: auto; /* this does the same thing as above two lines in this case */
+  flex: 1 1 100%;
+  width: 100%;
+
+  /* NEW STUFF 2018, NOT VANILLA JSPSYCH */
+  background-color: black;
+  /* cursor: none; */
+}
+#patient-id-please, .jspsych-survey-multi-choice-preamble, .jspsych-survey-multi-choice-question, #jspsych-html-keyboard-response-stimulus {
+  color: white;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+.loading-container {
+  display: flex;
+  margin: 10% auto;
+}
+#loading-text {
+  font-size: 5em;
+  margin: auto;
+}
+
+.debug-text {
+  color: green;
+}
+
+.save-location {
+  font-family: monospace;
+}
